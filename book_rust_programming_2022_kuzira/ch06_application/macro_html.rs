@@ -4,7 +4,7 @@ macro_rules! out_html {
     // 인수가 없을 때, 재귀호출시 base
     () => {()};  
 
-    // 인수가 1개일때, ex) ["This is test"]
+    // 인수가 1개일때, ex) ["This is test"], , 재귀호출시 base
     ($e:tt) => {print!("{}", $e);};
 
     // 태그[안쪽]을 계속 지정하는 경우 

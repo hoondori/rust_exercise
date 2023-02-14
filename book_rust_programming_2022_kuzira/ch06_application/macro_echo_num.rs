@@ -4,9 +4,9 @@ macro_rules! echo_num {
     ($num:expr) => { println!("{}", $num)};
 }
 
-#[macro_export]
-macro_rules! echo_nums {
-    ( $($num:expr), *) => { 
+#[macro_export]  
+macro_rules! echo_nums {  
+    ( $($num:expr), *) => {   // 요소가 여러 개인 경우, *, zero or more
         $(
             print!("{}, ", $num);
         )*
